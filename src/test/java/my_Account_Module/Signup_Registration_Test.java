@@ -23,7 +23,7 @@ public class Signup_Registration_Test {
 	  {
 		  radio.get(1).click();
 		  dr.findElement(By.id("fname")).sendKeys("su");
-	  }//else block
+	  }//else block created
 	  else
 	  {
 		  radio.get(0).click();
