@@ -1,6 +1,6 @@
 package my_Account_Module;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;

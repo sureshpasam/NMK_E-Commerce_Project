@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.testng.annotations.AfterMethod;
 
 public class WishList_Script {
@@ -23,7 +22,7 @@ public class WishList_Script {
 	  Actions action = new Actions(dr);
 	  WebElement event= dr.findElement(By.xpath("/html/body/table/tbody/tr[1]/td/div/ul/li[7]/a"));
 	  action.moveToElement(event).build().perform();
-	  Sleeper.sleepTightInSeconds(1);
+	//  Sleeper.sleepTightInSeconds(1);
 	  dr.findElement(By.xpath("/html/body/table/tbody/tr[1]/td/div/ul/li[7]/ul/li[1]/a")).click();
 	  dr.findElement(By.id("frndemail")).sendKeys("sureshpasam94@gmail.com");
 	  dr.findElement(By.id("frndname")).sendKeys("suresh pasam");
