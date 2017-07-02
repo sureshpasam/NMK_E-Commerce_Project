@@ -1,16 +1,14 @@
 package my_Account_Module;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.server.browserlaunchers.Sleeper;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class Account_Details_Updated {
 	FirefoxDriver dr;
@@ -23,7 +21,7 @@ public class Account_Details_Updated {
 	  Actions action = new Actions(dr);
 	  WebElement event= dr.findElement(By.xpath("/html/body/table/tbody/tr[1]/td/div/ul/li[7]/a"));
 	  action.moveToElement(event).build().perform();
-	  Sleeper.sleepTightInSeconds(2);
+	 // Sleeper.sleepTightInSeconds(2);
 	  dr.findElement(By.linkText("Account Details")).click();
 	  dr.findElement(By.id("fname")).clear();
 	  dr.findElement(By.id("fname")).sendKeys("suresh123");
