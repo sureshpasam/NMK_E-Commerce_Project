@@ -15,6 +15,7 @@ public class Login_Script {
 	  dr.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	  dr.findElement(By.id("email")).sendKeys("psuresh.qatest@gmail.com");
 	  dr.findElement(By.id("password")).sendKeys("suresh@123");  
+	  // this is new line
 	  dr.findElement(By.xpath("/html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td[2]/form/table/tbody/tr[5]/td/a/div")).click();
   }
   // launch the broswer
